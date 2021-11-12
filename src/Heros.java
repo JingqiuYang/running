@@ -58,7 +58,7 @@ public class Heros<lastTime, time> extends AnimatedThing {
 
      public void jump() {
           ay=ay-300; //acceleration, the more important is the value behind the sign the more important the jump will be
-          //vy=30;
+          vy=30;
      }
 
 
