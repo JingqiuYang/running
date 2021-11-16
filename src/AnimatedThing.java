@@ -3,7 +3,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 abstract public class AnimatedThing {
     private static ImageView sprite;
-    private static double x;
+    private double x;
     private double y;
     private int attitude;
     private int index;
@@ -15,19 +15,19 @@ abstract public class AnimatedThing {
         return x;
     }
 
-    public double getY() {
-        return y;
-    }
+   public double getY() {
+       return y;
+   }
 
     public static ImageView getSprite() {
         return sprite;
     }
 
-    public static void setX(double x) {
-        AnimatedThing.x = x;
+    public  void setX(double x) {
+        this.x = x;
     }
 
-    public void setY(double y) {
+   public void setY(double y) {
         this.y = y;
     }
 
@@ -41,4 +41,6 @@ abstract public class AnimatedThing {
         sprite.setY(ypos);
 
     }
+    
+
 }

@@ -2,16 +2,19 @@ public class Camera {
 
    private double x;
    private double y;
-   private  AnimatedThing  f;
+   //private  AnimatedThing  f;
+   private Heros f;
 
-   public Camera(Integer x,Integer y, AnimatedThing  f) {
+   public Camera(Integer x, Integer y, Heros f) {
       this.x = x;
       this.y = y;
       this.f = f;
    }
 
    public void update () {
-      x=f.getX()-100;
+      x = x + 3;
+      f.getSprite().setX(f.getSprite().getX()-x+50);
+
 
    }
 

@@ -13,9 +13,7 @@ public class staticThing{
         this.y=y;
         Image b=new Image(filename);
         sprite=new ImageView(b);
-        //sprite.setViewport(new Rectangle2D(x,x,800,400));
-        //sprite.setX(this.x);
-        //sprite.setY(this.y);
+
     }
 
     public int getX(){

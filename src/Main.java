@@ -8,14 +8,12 @@ import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
   public class Main extends Application{
- // private static final Image SCENERY = new Image("desert.png",800,400,true,true);
-  //final private ImageView ImageViewSceneryLeft=new ImageView(SCENERY);//显示图片//
-    public void start(Stage primaryStage){
+      public void start(Stage primaryStage){
         primaryStage.setTitle("run baby run");
         Group root = new Group();
-        GameScene scene = new GameScene(root, 600, 400);//显示窗口大小//
+        GameScene scene = new GameScene(root, 600, 400);//show the size of window//
         primaryStage.setScene(scene);
-        primaryStage.show();//显示窗口//
+        primaryStage.show();//show the window//
     }
     public static void main(String[] args) {
         launch(args);
